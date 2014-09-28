@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Task Name:</b>
+  <%= @todo.name %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @todo.date %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @todo.completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_todo_path(@todo) %> |
+<%= link_to 'Back', todos_path %>
